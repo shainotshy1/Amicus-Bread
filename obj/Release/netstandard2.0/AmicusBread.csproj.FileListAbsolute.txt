@@ -1,0 +1,14 @@
+C:\Users\Shai\source\repos\AmicusBread\AmicusBread\AmicusBread\bin\Release\netstandard2.0\AmicusBread.deps.json
+C:\Users\Shai\source\repos\AmicusBread\AmicusBread\AmicusBread\bin\Release\netstandard2.0\AmicusBread.dll
+C:\Users\Shai\source\repos\AmicusBread\AmicusBread\AmicusBread\bin\Release\netstandard2.0\ref\AmicusBread.dll
+C:\Users\Shai\source\repos\AmicusBread\AmicusBread\AmicusBread\bin\Release\netstandard2.0\AmicusBread.pdb
+C:\Users\Shai\source\repos\AmicusBread\AmicusBread\AmicusBread\obj\Release\netstandard2.0\AmicusBread.csprojAssemblyReference.cache
+C:\Users\Shai\source\repos\AmicusBread\AmicusBread\AmicusBread\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\Shai\source\repos\AmicusBread\AmicusBread\AmicusBread\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Shai\source\repos\AmicusBread\AmicusBread\AmicusBread\obj\Release\netstandard2.0\AmicusBread.AssemblyInfoInputs.cache
+C:\Users\Shai\source\repos\AmicusBread\AmicusBread\AmicusBread\obj\Release\netstandard2.0\AmicusBread.AssemblyInfo.cs
+C:\Users\Shai\source\repos\AmicusBread\AmicusBread\AmicusBread\obj\Release\netstandard2.0\AmicusBread.csproj.CoreCompileInputs.cache
+C:\Users\Shai\source\repos\AmicusBread\AmicusBread\AmicusBread\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\Shai\source\repos\AmicusBread\AmicusBread\AmicusBread\obj\Release\netstandard2.0\AmicusBread.dll
+C:\Users\Shai\source\repos\AmicusBread\AmicusBread\AmicusBread\obj\Release\netstandard2.0\ref\AmicusBread.dll
+C:\Users\Shai\source\repos\AmicusBread\AmicusBread\AmicusBread\obj\Release\netstandard2.0\AmicusBread.pdb

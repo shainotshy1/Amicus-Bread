@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Class="AmicusBread.MainPage">
+    <ContentPage.Resources>
+        <StyleSheet>
+            <![CDATA[
+            ^contentpage {
+                background-color: lightgray;
+            }
+            ]]>
+        </StyleSheet>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.2*"/>
+            <RowDefinition Height="9.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5"/>
+        </Grid.RowDefinitions>
+        <Image Source="https://bakerrecipes.com/wp-content/uploads/2020/01/cinnamon-raisin-bread-with-honey.png" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="4" Scale="1.6"/>
+        <Label Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="3" Grid.Row="0" Padding="10" Text="Order Baked Goods" HorizontalOptions="Center" FontSize="50" TextColor="White" FontFamily="Amicus.ttf#Amicus"/>
+        <StackLayout Spacing="5" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1">
+            <StackLayout BindingContext="{x:Reference slider1}">
+                <Label Padding="5" FontSize="20" Text="{Binding Value, StringFormat='Assorted Cookies (Dozen = $6.00 Single = $0.75): {0:F0}'}" TextColor="White" FontFamily="Amicus.ttf#Amicus"/>
+                <Slider HeightRequest="9" Maximum="48" x:Name="slider1"/>
+            </StackLayout>
+            <StackLayout BindingContext="{x:Reference slider2}">
+                <Label Padding="5" FontSize="20" Text="{Binding Value, StringFormat='Lemmon Berry Scones ($3.50): {0:F0}'}" TextColor="White" FontFamily="Amicus.ttf#Amicus"/>
+                <Slider HeightRequest="9" Maximum="10" x:Name="slider2"/>
+            </StackLayout>
+            <StackLayout BindingContext="{x:Reference slider3}">
+                <Label Padding="5" FontSize="20" Text="{Binding Value, StringFormat='Cinnamon Currant Scones ($3.50): {0:F0}'}" TextColor="White" FontFamily="Amicus.ttf#Amicus"/>
+                <Slider HeightRequest="9" Maximum="10" x:Name="slider3"/>
+            </StackLayout>
+            <StackLayout BindingContext="{x:Reference slider4}">
+                <Label Padding="5" FontSize="20" Text="{Binding Value, StringFormat='Herb Crackers ($3.00): {0:F0}'}" TextColor="White" FontFamily="Amicus.ttf#Amicus"/>
+                <Slider HeightRequest="9" Maximum="10" x:Name="slider4"/>
+            </StackLayout>
+            <StackLayout BindingContext="{x:Reference slider5}">
+                <Label Padding="5" FontSize="20" Text="{Binding Value, StringFormat='Cheese Crackers ($3.00): {0:F0}'}" TextColor="White" FontFamily="Amicus.ttf#Amicus"/>
+                <Slider HeightRequest="9" Maximum="10" x:Name="slider5"/>
+            </StackLayout>
+            <StackLayout BindingContext="{x:Reference slider6}">
+                <Label Padding="5" FontSize="20" Text="{Binding Value, StringFormat='Blonde Sourdough Bread ($7.00): {0:F0}'}" TextColor="White" FontFamily="Amicus.ttf#Amicus"/>
+                <Slider HeightRequest="9" Maximum="10" x:Name="slider6"/>
+            </StackLayout>
+            <StackLayout BindingContext="{x:Reference slider7}">
+                <Label Padding="5" FontSize="20" Text="{Binding Value, StringFormat='Whole Wheat Sourdough ($7.00): {0:F0}'}" TextColor="White" FontFamily="Amicus.ttf#Amicus"/>
+                <Slider HeightRequest="9" Maximum="10" x:Name="slider7"/>
+            </StackLayout>
+            <StackLayout BindingContext="{x:Reference slider8}">
+                <Label Padding="5" FontSize="20" Text="{Binding Value, StringFormat='Cinnamon Rolls ($3.50): {0:F0}'}" TextColor="White" FontFamily="Amicus.ttf#Amicus"/>
+                <Slider HeightRequest="9" Maximum="10" x:Name="slider8"/>
+            </StackLayout>
+            <Label BindingContext="{x:Reference slider9}" Padding="5" FontSize="20" Text="{Binding Value, StringFormat='Biscuits ($3.50): {0:F0}'}" TextColor="White" FontFamily="Amicus.ttf#Amicus"/>
+            <Slider HeightRequest="9" Maximum="10" x:Name="slider9"/>
+            <Label BindingContext="{x:Reference slider10}" Padding="5" FontSize="20" Text="{Binding Value, StringFormat='Macaroons (Dozen = $10.00 Single = $1.25): {0:F0}'}" TextColor="White" FontFamily="Amicus.ttf#Amicus"/>
+            <Slider HeightRequest="9" Maximum="24" x:Name="slider10"/>
+        </StackLayout>
+        <Button BorderColor="White" BorderWidth="3" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="1" FontSize="25" CornerRadius="30" Clicked="Button_Clicked" BackgroundColor="Transparent"
+                FontAttributes="Bold" Text="Calculate" TextColor="White" FontFamily="Amicus.ttf#Amicus" />
+        <Button BorderColor="White" BorderWidth="3" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" FontSize="25" CornerRadius="30" Clicked="Reset" BackgroundColor="Transparent"
+                FontAttributes="Bold" Text="Reset" TextColor="White" FontFamily="Amicus.ttf#Amicus" />
+    </Grid>
+</ContentPage>
